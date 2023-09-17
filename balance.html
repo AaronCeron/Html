@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>"Balance"</title>
+        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    </head>
+    <body>
+        <div class= "columns">
+            <div class= "column col-12 text-center" style="border: 1px solid black;">
+                <h1>Add or subtract from balance</h1>
+            </div>
+            
+            <div class="columns">
+                <div class="column col-2">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a href="Home.html"><button class="btn btn-lg">Home</button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#"><button class="btn btn-lg">Balance</button></a>
+                            <div class = "column col-10 pt-centered mt-2">
+                            <p> Input the quantity you want to add or subtract: </p>
+                                <h1>Balance</h1>
+                                <form action="Home.html" method="get">
+                                    <form onsubmit="return false;">
+                                    <input class="result" type="text" id="money" value=0 required minlength="1"/>
+                                    <button onClick="valInc()">Add</button>
+                                    <button onClick="valDec()">Subtract</button>
+                                    </form>
+                                </form>
+                            </div> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
